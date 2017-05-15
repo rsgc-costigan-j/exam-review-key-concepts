@@ -23,7 +23,19 @@ import PlaygroundSupport
 // Create a new canvas
 let canvas = Canvas(width: 400, height: 600)
 
+//background
+canvas.fillColor = Color(hue: 190, saturation: 100, brightness: 80, alpha: 100)
+canvas.drawRectangle(centreX: 200, centreY: 300, width: 400, height: 600)
 
+//text
+canvas.textColor = Color(hue: 170, saturation: 100, brightness: 5, alpha: 100)
+canvas.drawText(message: "blur", size: 200, x: 10, y: 279)
+
+//loop to draw streak
+canvas.textColor = Color(hue: 170, saturation: 100, brightness: 5, alpha: 15)
+for x in stride(from: 300, to: -50, by: -7){
+    canvas.drawText(message: "blur", size: 200, x: 10, y: x)
+}
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
 PlaygroundPage.current.liveView = canvas.imageView
