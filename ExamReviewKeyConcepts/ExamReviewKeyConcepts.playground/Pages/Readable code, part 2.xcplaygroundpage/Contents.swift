@@ -12,7 +12,7 @@ import PlaygroundSupport
 // Create the canvas
 let canvas = Canvas(width: 200, height: 360)
 
-// Draw lines with steadily increasing thickness
+// Draw lines with steadily increasing thiccness
 for position in stride(from: 0, through: 100, by: 10) {
     
     // What is the current value of position?
