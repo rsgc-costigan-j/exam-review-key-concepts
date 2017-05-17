@@ -44,7 +44,8 @@ canvas.drawText(message: "october 16 1993 /8 pm", size: 10, x: 22, y: 560)
 canvas.drawText(message: "mandela hall", size: 10, x: 145, y: 570)
 canvas.drawText(message: "at university of sussex", size: 10, x: 145, y: 560)
 canvas.drawText(message: "special guest", size: 10, x: 268, y: 570)
-canvas.drawText(message: "special guest", size: 10, x: 268, y: 560)
+canvas.drawText(message: "salad, plus my life story", size: 10, x: 268, y: 560)
+canvas.drawText(message: "£6.50/£5.50 advance", size: 10, x: 268, y: 540)
 
 
 //: ## Template code
