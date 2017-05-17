@@ -29,13 +29,24 @@ canvas.drawRectangle(centreX: 200, centreY: 300, width: 400, height: 600)
 
 //text
 canvas.textColor = Color(hue: 170, saturation: 100, brightness: 5, alpha: 100)
-canvas.drawText(message: "blur", size: 200, x: 10, y: 279)
+canvas.drawText(message: "blur", size: 200, x: 10, y: 305)
 
 //loop to draw streak
 canvas.textColor = Color(hue: 170, saturation: 100, brightness: 5, alpha: 15)
-for x in stride(from: 300, to: -50, by: -7){
+for x in stride(from: 325, to: -50, by: -6){
     canvas.drawText(message: "blur", size: 200, x: 10, y: x)
 }
+
+//upper text
+canvas.textColor = Color(hue: 170, saturation: 100, brightness: 5, alpha: 100)
+canvas.drawText(message: "saturday", size: 10, x: 22, y: 570)
+canvas.drawText(message: "october 16 1993 /8 pm", size: 10, x: 22, y: 560)
+canvas.drawText(message: "mandela hall", size: 10, x: 145, y: 570)
+canvas.drawText(message: "at university of sussex", size: 10, x: 145, y: 560)
+canvas.drawText(message: "special guest", size: 10, x: 268, y: 570)
+canvas.drawText(message: "special guest", size: 10, x: 268, y: 560)
+
+
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
 PlaygroundPage.current.liveView = canvas.imageView
