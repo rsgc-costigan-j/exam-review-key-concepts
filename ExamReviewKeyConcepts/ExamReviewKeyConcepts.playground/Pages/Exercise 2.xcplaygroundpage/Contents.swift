@@ -23,7 +23,21 @@ import PlaygroundSupport
 // Create a new canvas
 let canvas = Canvas(width: 400, height: 600)
 
+canvas.drawShapesWithFill = true
+canvas.drawShapesWithBorders = false
+canvas.translate(byX: 15, byY: 350)
 
+
+//making canvas
+canvas.fillColor = Color(hue: 85, saturation: 5, brightness: 88, alpha: 100)
+canvas.drawRectangle(centreX: 200, centreY: 0, width: 500, height: 700)
+//swirling text
+for x in stride(from: 100, to: 0, by: -5){
+canvas.textColor = Color(hue: 1, saturation: 0, brightness: 0, alpha: x)
+canvas.drawText(message: "undertones", size: 70, x: 0, y: -30)
+    canvas.rotate(by: Degrees(-5))
+
+}
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
 PlaygroundPage.current.liveView = canvas.imageView
